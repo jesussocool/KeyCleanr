@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Border Width="90" Height="90" CornerRadius="45" Background="#E8650A"
+            <Border x:Name="IconBorder"  Width="90" Height="90" CornerRadius="45" Background="#E8650A"
                     VerticalAlignment="Center">
                 <FontIcon Glyph="&#xE765;" FontFamily="Segoe MDL2 Assets"
                           FontSize="40" Foreground="White"

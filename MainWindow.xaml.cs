@@ -28,7 +28,7 @@ namespace KeyCleanr
                 var scale = GetScaleFactor();
                 AppWindow.Resize(new SizeInt32(
                     (int)(640 * scale),
-                    (int)(340 * scale)
+                    (int)(280 * scale)
                 ));
 
                 if (AppWindow.Presenter is OverlappedPresenter p)
@@ -68,12 +68,16 @@ namespace KeyCleanr
         {
             _hook.Lock();
             ToggleButtonText.Text = "Click to stop cleaning mode / unlock the keyboard!";
+            IconBorder.Background = new Microsoft.UI.Xaml.Media.SolidColorBrush(
+                Microsoft.UI.ColorHelper.FromArgb(255, 232, 101, 10));
         }
 
         private void StopCleaning()
         {
             _hook.Unlock();
             ToggleButtonText.Text = "Click to start cleaning mode / lock the keyboard!";
+            IconBorder.Background = new Microsoft.UI.Xaml.Media.SolidColorBrush(
+                Microsoft.UI.ColorHelper.FromArgb(255, 59, 125, 216));
         }
     }
 }
