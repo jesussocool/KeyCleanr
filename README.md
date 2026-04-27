@@ -1,4 +1,12 @@
+<p align="left">
+  <img src="screenshots/app-icon.png" width="120"/>
+</p>
+
 # KeyCleanr
+
+<p align="center">
+  <img src="screenshots/app-preview.png" width="600"/>
+</p>
 
 A simple keyboard cleaning utility for Windows, inspired by KeyboardCleanTool.
 Inspiration: https://folivora.ai/keyboardcleantool
