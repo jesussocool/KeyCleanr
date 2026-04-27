@@ -1,6 +1,7 @@
 # KeyCleanr
 
-A simple keyboard cleaning utility for Windows, inspired by the macOS KeyboardCleanTool.
+A simple keyboard cleaning utility for Windows, inspired by KeyboardCleanTool.
+Inspiration: https://folivora.ai/keyboardcleantool
 
 ## What it does
 

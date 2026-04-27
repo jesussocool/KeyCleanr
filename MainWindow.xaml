@@ -24,21 +24,22 @@
 
             <Border x:Name="IconBorder"  Width="90" Height="90" CornerRadius="45" Background="#E8650A"
                     VerticalAlignment="Center">
-                <FontIcon Glyph="&#xE765;" FontFamily="Segoe MDL2 Assets"
-                          FontSize="40" Foreground="White"
-                          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="Assets/keyboard-icon.png"
+                    Width="54" Height="54"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
             </Border>
 
             <StackPanel Grid.Column="1" Spacing="10" VerticalAlignment="Center">
                 <Button x:Name="ToggleButton" Click="ToggleButton_Click"
                         HorizontalAlignment="Stretch" Padding="12,8">
                     <TextBlock x:Name="ToggleButtonText"
-                               Text="Click to start cleaning mode / lock the keyboard!"
+                               Text="Click to start cleaning mode / lock the keyboard"
                                TextWrapping="Wrap" TextAlignment="Center"/>
                 </Button>
 
                 <TextBlock TextWrapping="Wrap" FontWeight="SemiBold" FontSize="13">
-                    ATTENTION: This will lock your keyboard COMPLETELY until you press the button again! You won't be able to type anything while it's locked.
+                    ATTENTION: This will lock your keyboard until you press the button again! You won't be able to type anything while it's locked.
                 </TextBlock>
 
                 <CheckBox x:Name="AutoStartCheckBox"
