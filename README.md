@@ -12,6 +12,22 @@ Locks your keyboard completely so you can wipe it down without accidentally trig
 - Windows 10 or 11
 - .NET 8+
 
+## Installation
+
+1. Download the `.msix` and `.cer` files from the latest release
+
+2. Install the certificate first:
+   - Double-click the `.cer` file
+   - Click **Install Certificate**
+   - Select **Local Machine**
+   - Select **Place all certificates in the following store**
+   - Click **Browse** and select **Trusted Root Certification Authorities**
+   - Click **OK** then **Finish**
+
+3. Double-click the `.msix` file to install
+
+You only need to install the certificate once. Future updates will install without repeating this step.
+
 ## Building
 
 1. Open `KeyCleanr.sln` in Visual Studio 2022
@@ -26,7 +42,6 @@ Locks your keyboard completely so you can wipe it down without accidentally trig
 4. Click the button again to unlock
 
 ## Notes
-
 - The app requires Developer Mode to be enabled on Windows for sideloading and installing the release build. You can enable Developer Mode in Settings > Update & Security > For developers.
 - All keystrokes are blocked at the system level while locked — this includes shortcuts like Alt+F4 and Win key
 
