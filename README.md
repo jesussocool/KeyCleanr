@@ -27,7 +27,7 @@ Locks your keyboard completely so you can wipe it down without accidentally trig
 
 ## Notes
 
-- The app requires Developer Mode to be enabled on Windows for sideloading during development
+- The app requires Developer Mode to be enabled on Windows for sideloading and installing the release build. You can enable Developer Mode in Settings > Update & Security > For developers.
 - All keystrokes are blocked at the system level while locked — this includes shortcuts like Alt+F4 and Win key
 
 ## Known Limitations
