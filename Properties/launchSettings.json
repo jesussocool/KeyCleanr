@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "KeyCleanr (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "KeyCleanr (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

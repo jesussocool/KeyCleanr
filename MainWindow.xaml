@@ -1,0 +1,58 @@
+<Window
+    x:Class="KeyCleanr.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="KeyCleanr">
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TitleBarText" Grid.Row="0"
+                   Text="KeyCleanr" Margin="16,10,0,10"
+                   FontSize="13" FontWeight="SemiBold"/>
+
+        <Grid Grid.Row="1" Padding="24,0,24,16" ColumnSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Width="90" Height="90" CornerRadius="45" Background="#E8650A"
+                    VerticalAlignment="Center">
+                <FontIcon Glyph="&#xE765;" FontFamily="Segoe MDL2 Assets"
+                          FontSize="40" Foreground="White"
+                          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+
+            <StackPanel Grid.Column="1" Spacing="10" VerticalAlignment="Center">
+                <Button x:Name="ToggleButton" Click="ToggleButton_Click"
+                        HorizontalAlignment="Stretch" Padding="12,8">
+                    <TextBlock x:Name="ToggleButtonText"
+                               Text="Click to start cleaning mode / lock the keyboard!"
+                               TextWrapping="Wrap" TextAlignment="Center"/>
+                </Button>
+
+                <TextBlock TextWrapping="Wrap" FontWeight="SemiBold" FontSize="13">
+                    ATTENTION: This will lock your keyboard COMPLETELY until you press the button again! You won't be able to type anything while it's locked.
+                </TextBlock>
+
+                <CheckBox x:Name="AutoStartCheckBox"
+                          Content="Start cleaning mode immediately after starting this app"
+                          IsChecked="True"/>
+            </StackPanel>
+        </Grid>
+
+        <Rectangle Grid.Row="2" Height="1" Margin="24,0,24,0"
+                   Fill="{ThemeResource DividerStrokeColorDefaultBrush}"/>
+
+        <TextBlock Grid.Row="3" Margin="0,10,0,14"
+                   Text="KeyCleanr — Keyboard cleaning utility for Windows"
+                   HorizontalAlignment="Center"
+                   FontSize="12" Opacity="0.5"/>
+    </Grid>
+</Window>
